@@ -33,7 +33,7 @@ do
 
        #указываем имя временного файла
        uuid=$(uuidgen)
-       TMP="./../tmp/result/${uuid}";
+       TMP="/tmp/${uuid}";
 
        #выполняем оптимизацию
        /opt/mozjpeg/bin/cjpeg -outfile $TMP -progressive -optimize -quality $QUALITY "$filename"
